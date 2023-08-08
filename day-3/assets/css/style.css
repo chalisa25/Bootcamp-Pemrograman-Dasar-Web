@@ -1,0 +1,82 @@
+body{
+    background-color: violet;
+}
+
+/* contoh selector tag */
+h1{
+    color: white;
+}
+
+p{
+    color: red;
+}
+
+/* contoh selector class */
+.heading-text-1 {
+    color: aquamarine;
+}
+
+/* penggabungan style */
+.heading-text-1,
+.heading-text-2 {
+    color: aquamarine;
+}
+/* contoh selector id, id bersifat unik, tidak boleh ada yang sama */
+#newjeans-nih {
+    width: 300px;
+}
+
+.container-article {
+    background-color: aliceblue;
+    /* width: fit-content; */
+    /* padding memberi garis tepi,
+    1rem = 16px */
+    padding: 1rem;
+    /* padding-left: 1rem; */
+    /* padding top: 1rem; */
+    /* padding bottom: 1rem; */
+    /* border radius berfungsi untuk memberikan garis lengkung pada elemen */
+    border-radius: 12px;
+    /* text-align center berfungsi mencenterkan elemen */
+    text-align: center;
+/* membuat jarak antar elemen */
+    margin-top: 2rem;
+
+    /* display: none; */
+}
+
+.text-caption {
+    /* mengubah ukuran font */
+    font-size: 24px;
+    /* mengatur ketebalan teks */
+    font-weight: 700;
+    /* mengubah style font */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* mengatur font menjadi besar atau kecil */
+    font-variant: small-caps;
+    /* mengubah warna font */
+    color: lightgreen;
+    /* khusus teks arab */
+    direction: rtl;
+    /* membuat garis bawah */
+    text-decoration: underline;
+    /* word spacing mengatur jarak antar kata */
+    word-spacing: 10px;
+}
+
+.rectangle {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+
+.container-flex {
+    /* membuat konten menjadi fleksibel */
+    display: flex;
+    /* mengatur posisi kontennterdapat jarak antar elemen */
+    justify-content: space-between;
+    /* justify-content: center; */
+    /* justify-content: end; */
+    /* gap memberi jarak antar elemen */
+    gap: 20px;
+}
