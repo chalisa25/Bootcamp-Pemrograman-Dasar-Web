@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- a berfungsi untuk berpindah dari halaman satu ke halaman lain, 
+        href berfungsi, 
+        menentukkan halaman yang dituju, 
+        target berfungsi untuk menentukkan bagaimana halaman akan dibuka -->
+    <a href="halaman2.html">Pindah halaman2</a>
+    <br />
+    <a href="https://www.instagram.com/chalisavie/">Instagram Saya</a>
+    <br />
+    <a href="https://www.instagram.com/chalisavie/" target="_blank">Instagram Saya</a>
+    <br>
+    <a href="https://www.instagram.com/">
+        <img src="Instagram_logo_2022.svg.webp" width="50">
+    </a>
+
+    <!-- center berfungsi untuk membuat elemen berada di tengah -->
+    <center>
+        <img src="Venellope and the princess Venellope e as princesas Ralphs break the internet Detona Ralph Wallpaper pc Wallpaper desktop (1).png" alt="hah" width="200">
+        <h1>hah</h1>
+    </center>
+
+    <!-- table berfungsi untuk membuat tabel, 
+        tr berfungsi untuk membuat baris,
+        th berfungsi untuk membuat header, 
+        td berfungsi untuk membuat kolom, 
+        border berfungsi untuk memberikan garis pada tabel,
+        width berfungsi memberikan lebar lebar pada teks, 
+        colspan berfungsi untuk menggabungkan kolom, 
+        align berfungsi untuk mengatur posisi teks,  -->
+    <table border="1" width="100%">
+        <tr>
+            <th>
+                No
+            </th>
+            <th align="center">
+                Nama
+            </th>
+            <th>
+                Hobi
+            </th>
+            <th colspan="3">Keparahan</th>
+        </tr>
+        <tr>
+            <td>
+                1
+            </td>
+            <td>
+                Biwa
+            </td>
+            <td>
+                Bolos Sekolah
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                2
+            </td>
+            <td>
+                aliL
+            </td>
+            <td>
+                jarang mandi
+            </td>
+        </tr>
+    </table>
+    <h1>belajar form</h1>
+
+    <!-- form berfungsi untuk membuat form, 
+        label berfungsi untuk membuat label, 
+        input berfungsi untuk membuat inputan, 
+        type berfungsi untuk tipe inputan, 
+        name berfungsi untuk memberikan nama pada inputan, 
+        placeholder berfungsi untuk memberikan placeholder pada inputan, 
+        id berfungsi untuk memberikan id pada inputan, 
+        onclick berfungsi untuk menjalankan fungsi ketika di klik -->
+    <form method="get">
+        <label for="">Nama</label>
+        <br>
+        <input type="text" name="nama" placeholder="masukkan nama anda">
+        <br>
+
+        <label for="">Email</label>
+        <br>
+        <input type="email" name="email" placeholder="masukkan alamat email anda">
+        <br>
+
+        <label for="">Password</label>
+        <br>
+        <input type="password" name="password" placeholder="masukkan password" id="password">
+        <br>
+        <input type="checkbox" onclick="show()">
+        <label for="">Tampilan Password</label>
+        <br>
+
+        <label for="">Tanggal Lahir</label>
+        <br>
+        <input type="date">
+        <br>
+
+        <label for="Jenis Kelamin"></label>
+            <select name="" id="">
+                <option value="">Laki-laki</option>
+                <option value="">Perempuan</option>
+            </select>
+        <br>
+
+        <label for="">Text Area</label>
+        <br>
+        <textarea name="" id="" cols="50" rows="10"></textarea>
+        <br>
+
+        <label for="">Foto KTP</label>
+        <br>
+        <input type="file">
+        <br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <script>
+        function show() {
+            var input = document.getElementById("password");
+            if (input.type === "password") {
+                input.type = "text";
+            } else {
+                input.type = "password";
+            }
+
+        }
+    </script>
+  </body>
+</html>
